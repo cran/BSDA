@@ -1,0 +1,27 @@
+\name{SRS}
+\alias{SRS}
+
+\title{Simple Random Sampling}
+\description{
+Computes all possible samples from a given population using simple random sampling.
+}
+\usage{
+SRS(POPvalues, n)
+}
+
+\arguments{
+  \item{POPvalues}{vector containing the poulation values.}
+  \item{n}{the sample size.}
+}
+\value{Returns a matrix containing the possible simple random samples of size 
+\code{n} taken from a population \code{POPvalues}.} 
+
+
+\author{Alan T. Arnholt}
+\seealso{\code{\link{Combinations}}}
+\examples{
+SRS(c(5,8,3),2)
+    # The rows in the matrix list the values for the 3 possible
+    # simple random samples of size 2 from the population of 5,8, and 3.
+}
+\keyword{distribution}

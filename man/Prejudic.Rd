@@ -1,0 +1,22 @@
+\name{Prejudic}
+\alias{Prejudic}
+\docType{data}
+\title{Racial prejudice measured on a sample of 25 high school students}
+\description{
+  Data for Exercise 5.10 and 5.22
+}
+\usage{Prejudic}
+\format{
+  A data frame with 25 observations on the following variable.
+  \describe{
+    \item{\code{prejud}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+\examples{
+str(Prejudic)
+attach(Prejudic)
+EDA(prejud)
+detach(Prejudic)
+}
+\keyword{datasets}

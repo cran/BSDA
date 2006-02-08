@@ -1,0 +1,30 @@
+\name{Name}
+\alias{Name}
+\docType{data}
+\title{Estimated value of a brand name product and the conpany's revenue}
+\description{
+  Data for Exercises 2.28, 9.19, and Example 2.8
+}
+\usage{Name}
+\format{
+  A data frame with 42 observations on the following 3 variables.
+  \describe{
+    \item{\code{Brand}}{a factor with levels \code{Band-Aid} \code{Barbie} \code{Birds Eye} \code{Budweiser} \code{Camel} \code{Campbell} \code{Carlsberg} \code{Coca-Cola} \code{Colgate} \code{Del Monte} \code{Fisher-Price} \code{Gordon's} \code{Green Giant} \code{Guinness} \code{Haagen-Dazs} \code{Heineken} \code{Heinz} \code{Hennessy} \code{Hermes} \code{Hershey} \code{Ivory} \code{Jell-o} \code{Johnnie Walker} \code{Kellogg} \code{Kleenex} \code{Kraft} \code{Louis Vuitton} \code{Marlboro} \code{Nescafe} \code{Nestle} \code{Nivea} \code{Oil of Olay} \code{Pampers} \code{Pepsi-Cola} \code{Planters} \code{Quaker} \code{Sara Lee} \code{Schweppes} \code{Smirnoff} \code{Tampax} \code{Winston} \code{Wrigley's}}
+    \item{\code{value}}{a numeric vector}
+    \item{\code{revenue}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+
+\examples{
+str(Name)
+attach(Name)
+plot(revenue,value)
+model <- lm(value~revenue)
+abline(model)
+cor(value,revenue)
+summary(model)
+detach(Name)
+remove(model)
+}
+\keyword{datasets}

@@ -1,0 +1,30 @@
+\name{Indian}
+\alias{Indian}
+\docType{data}
+\title{Educational attainment versus per capita income and poverty rate for American indians living on reservations}
+\description{
+  Data for Exercise 2.95
+}
+\usage{Indian}
+\format{
+  A data frame with 10 observations on the following 4 variables.
+  \describe{
+    \item{\code{Reserv}}{a factor with levels \code{Blackfeet} \code{Fort Apache} \code{Gila River} \code{Hopi} \code{Navajo} \code{Papago} \code{Pine Ridge} \code{Rosebud} \code{San Carlos} \code{Zuni Pueblo}}
+    \item{\code{highsch}}{a numeric vector}
+    \item{\code{income}}{a numeric vector}
+    \item{\code{poverty}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+
+\examples{
+str(Indian)
+attach(Indian)
+par(mfrow=c(1,2))
+plot(highsch,income,xlab="Percent High School Graduates", ylab="Per capita income")
+plot(highsch,poverty,xlab="Percent High School Graduates", ylab="Poverty rate")
+par(mfrow=c(1,1))
+cor(cbind(highsch,income,poverty))
+detach(Indian)
+}
+\keyword{datasets}

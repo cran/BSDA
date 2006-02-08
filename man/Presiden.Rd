@@ -1,0 +1,29 @@
+\name{Presiden}
+\alias{Presiden}
+\docType{data}
+\title{Ages at inauguration and death of U.S. presidents}
+\description{
+  Data for Exercise 1.126
+}
+\usage{Presiden}
+\format{
+  A data frame with 43 observations on the following 5 variables.
+  \describe{
+    \item{\code{firs}}{a factor with levels \code{A.} \code{B.} \code{C.} \code{D.} \code{F.} \code{G.} \code{G. W.} \code{H.} \code{J.} \code{L.} \code{M.} \code{R.} \code{T.} \code{U.} \code{W.} \code{Z.}}
+    \item{\code{Presiden}}{a factor with levels \code{Adams} \code{Arthur} \code{Buchanan} \code{Bush} \code{Carter} \code{Cleveland} \code{Clinton} \code{Coolidge} \code{Eisenhower} \code{Fillmore} \code{Ford} \code{Garfield} \code{Grant} \code{Harding} \code{Harrison} \code{Hayes} \code{Hoover} \code{Jackson} \code{Jefferson} \code{Johnson} \code{Kennedy} \code{Lincoln} \code{Madison} \code{McKinley} \code{Monroe} \code{Nixon} \code{Pierce} \code{Polk} \code{Reagan} \code{Roosevelt} \code{Taft} \code{Taylor} \code{Truman} \code{Tyler} \code{VanBuren} \code{Washington} \code{Wilson}}
+    \item{\code{Birt}}{a factor with levels \code{ARK} \code{CAL} \code{CONN} \code{GA} \code{IA} \code{ILL} \code{KY} \code{MASS} \code{MO} \code{NC} \code{NEB} \code{NH} \code{NJ} \code{NY} \code{OH} \code{PA} \code{SC} \code{TEX} \code{VA} \code{VT}}
+    \item{\code{Inaugage}}{a numeric vector}
+    \item{\code{Deathage}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+\examples{
+str(Presiden)
+attach(Presiden)
+table(Birt)
+pie(table(Birt))
+stripchart(x=list(Inaugage,Deathage),method="stack",
+group.names=c("Inaugural Age","Death Age"),col=c("green","brown"),pch=19)
+detach(Presiden) 
+}
+\keyword{datasets}

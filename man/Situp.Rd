@@ -1,0 +1,26 @@
+\name{Situp}
+\alias{Situp}
+\docType{data}
+\title{Maximum number of situps by participants in an exercise class}
+\description{
+  Data for Exercise 1.47
+}
+\usage{Situp}
+\format{
+  A data frame with 20 observations on the following variable.
+  \describe{
+    \item{\code{number}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+\examples{
+str(Situp)
+attach(Situp)
+stem(number)
+hist(number,breaks=seq(0,70,10))
+hist(number,breaks=seq(0,70,10),right=FALSE,col="blue",prob=TRUE,
+main="Problems 1.46 & 1.47")
+lines(density(number),col="red",lwd=3)
+detach(Situp)
+}
+\keyword{datasets}

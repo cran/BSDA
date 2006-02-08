@@ -1,0 +1,27 @@
+\name{Dogs}
+\alias{Dogs}
+\docType{data}
+\title{Rankings of the favorite breeds of dogs}
+\description{
+  Data for Exercise 2.88
+}
+\usage{Dogs}
+\format{
+  A data frame with 20 observations on the following 5 variables.
+  \describe{
+    \item{\code{Dog}}{a factor with levels \code{Beagle} \code{Boxer} \code{Chihuahua} \code{Chow} \code{Dachshund} \code{Dalmatian} \code{Doberman} \code{Huskie} \code{Labrador} \code{Pomeranian} \code{Poodle} \code{Retriever} \code{Rotweiler} \code{Schnauzer} \code{Shepherd} \code{Shetland} \code{ShihTzu} \code{Spaniel} \code{Springer} \code{Yorkshire}}
+    \item{\code{X1992}}{a numeric vector}
+    \item{\code{X1993}}{a numeric vector}
+    \item{\code{X1997}}{a numeric vector}
+    \item{\code{X1998}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+
+\examples{
+str(Dogs)
+attach(Dogs)
+cor(Dogs[,2:5])
+detach(Dogs)
+}
+\keyword{datasets}

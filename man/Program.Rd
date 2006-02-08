@@ -1,0 +1,29 @@
+\name{Program}
+\alias{Program}
+\docType{data}
+\title{ Effects of four different methods of programmed learning for statistics students}
+\description{
+  Data for Exercise 10.17
+}
+\usage{Program}
+\format{
+  A data frame with 11 observations on the following 4 variables.
+  \describe{
+    \item{\code{Method1}}{a numeric vector}
+    \item{\code{Method2}}{a numeric vector}
+    \item{\code{Method3}}{a numeric vector}
+    \item{\code{Method4}}{a numeric vector}
+  }
+}
+\source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
+\examples{
+str(Program)
+attach(Program)
+STACKED <-stack(Program)
+STACKED[1:5,]
+boxplot(values~ind,col=c("red","blue","green","yellow"),data=STACKED)
+anova(lm(values~ind,data=STACKED))
+remove(STACKED)
+detach(Program)
+}
+\keyword{datasets}
