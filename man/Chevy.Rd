@@ -5,7 +5,7 @@
 \description{
   Data for Exercise 8.35
 }
-\usage{Chevy}
+\usage{data(Chevy)}
 \format{
   A data frame with 2 observations on the following 6 variables.
   \describe{

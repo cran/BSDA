@@ -21,7 +21,7 @@
 attach(Alcohol)
 qqnorm(age)
 qqline(age)
-sign.test(age,md=20,conf.level=0.99)
+SIGN.test(age,md=20,conf.level=0.99)
 detach(Alcohol)
 }
 

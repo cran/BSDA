@@ -19,7 +19,7 @@ attach(Phone)
 qqnorm(time)
 qqline(time)
 shapiro.test(time)
-sign.test(time,md=5,alternative="greater")
+SIGN.test(time,md=5,alternative="greater")
 detach(Phone)
 }
 \keyword{datasets}

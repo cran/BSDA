@@ -18,7 +18,7 @@
 str(Greenriv)
 attach(Greenriv)
 EDA(thick)
-sign.test(thick,md=7.3,alternative="greater")
+SIGN.test(thick,md=7.3,alternative="greater")
 detach(Greenriv)
 }
 \keyword{datasets}

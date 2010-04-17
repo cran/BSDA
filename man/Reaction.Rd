@@ -16,7 +16,7 @@
 \examples{
 str(Reaction)
 attach(Reaction)
-sign.test(time,md=15,alternative="less")
+SIGN.test(time,md=15,alternative="less")
 detach(Reaction)
 }
 \keyword{datasets}

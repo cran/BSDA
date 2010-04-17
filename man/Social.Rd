@@ -16,7 +16,7 @@
 \examples{
 str(Social)
 attach(Social)
-sign.test(income,md=27500,alternative="less")
+SIGN.test(income,md=27500,alternative="less")
 detach(Social)
 }
 \keyword{datasets}

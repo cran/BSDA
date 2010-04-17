@@ -1,4 +1,4 @@
-"EDA" <-
+EDA <-
 function(x, trim = 0.05)
 {
     require(e1071)

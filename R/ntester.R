@@ -1,4 +1,4 @@
-"ntester" <-
+ntester <-
 function(actual.data)
 {
     Ared <- "#C00000"

@@ -21,7 +21,7 @@
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 
 \examples{
-str(Abilene)
+data(Abilene)
 attach(Abilene)
 par(mfrow=c(2,1))
 barplot(X1992,names.arg=c("Murder","Rape","Robbery","Assault","Burglary",

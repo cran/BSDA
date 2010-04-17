@@ -5,7 +5,7 @@
 \description{
   Data for Exercises 2.12 and 2.29
 }
-\usage{Inflatio}
+\usage{data(Inflatio)}
 \format{
   A data frame with 24 observations on the following 5 variables.
   \describe{

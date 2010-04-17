@@ -17,7 +17,7 @@
 str(Repair)
 attach(Repair)
 stem(time)
-sign.test(time,conf.level=.98)
+SIGN.test(time,conf.level=.98)
 detach(Repair)
 }
 \keyword{datasets}

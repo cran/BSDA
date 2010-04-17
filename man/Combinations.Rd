@@ -1,5 +1,6 @@
 \name{Combinations}
 \alias{Combinations}
+%- Also NEED an '\alias' for EACH other topic documented here.
 \title{Combinations}
 \description{
 Computes all possible combinations of \code{n} objects taken \code{k} at a time.
@@ -18,9 +19,6 @@ Combinations(n, k)
 }
 
 \seealso{\code{\link{SRS}}}
-
-\author{Tim Hesterberg}
-
 \examples{
 Combinations(5,2)
     # The columns in the matrix list the values of the 10 possible

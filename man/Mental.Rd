@@ -17,7 +17,7 @@
 \examples{
 str(Mental)
 attach(Mental)
-sign.test(age,md=100)
+SIGN.test(age,md=100)
 detach(Mental)
 }
 \keyword{datasets}

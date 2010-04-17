@@ -1,115 +1,119 @@
+% Edited 04/15/2010 by ATA
+
 \name{tsum.test}
 \alias{tsum.test}
 
-\title{T summary test}
-\description{Performs a one-sample, two-sample, or a Welch modified two-sample 
-t-test based on user supplied summary information. Output is identical to that 
+\title{Summarized t-test}
+\description{Performs a one-sample, two-sample, or a Welch modified two-sample
+t-test based on user supplied summary information. Output is identical to that
 produced with \code{t.test}.}
 
 \usage{
-tsum.test(mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL, n.y = NULL, alternative = "two.sided", mu = 0, var.equal = TRUE, conf.level = 0.95)
+tsum.test(mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL,
+n.y = NULL, alternative = "two.sided", mu = 0, var.equal = FALSE,
+conf.level = 0.95)
 }
 
 \arguments{
-  \item{mean.x}{a single number representing the sample mean of \code{x}.}
-  \item{s.x}{a single number representing the sample standard deviation for \code{x}.}
-  \item{n.x}{a single number representing the sample size for \code{x}.}
-  \item{mean.y}{a single number representing the sample mean of \code{y}.}
-  \item{s.y}{a single number representing the sample standard deviation for \code{y}.}
-  \item{n.y}{a single number representing the sample size for \code{y}.}
-  \item{alternative}{character string, one of \code{"greater"}, \code{"less"} or 
-  \code{"two.sided"}, or just the initial letter of each, indicating the specification 
-  of the alternative hypothesis. For one-sample tests, alternative refers to the true 
+  \item{mean.x}{a single number representing the sample mean of \code{x}}
+  \item{s.x}{a single number representing the sample standard deviation for \code{x}}
+  \item{n.x}{a single number representing the sample size for \code{x}}
+  \item{mean.y}{a single number representing the sample mean of \code{y}}
+  \item{s.y}{a single number representing the sample standard deviation for \code{y}}
+  \item{n.y}{a single number representing the sample size for \code{y}}
+  \item{alternative}{is a character string, one of \code{"greater"}, \code{"less"} or
+  \code{"two.sided"}, or just the initial letter of each, indicating the specification
+  of the alternative hypothesis. For one-sample tests, \code{alternative} refers to the true
   mean of the parent population in relation to the hypothesized value \code{mu}.
-  For the standard two-sample tests, alternative refers to the difference between 
-  the true population mean for \code{x} and that for \code{y}, in relation to \code{mu}. 
-  For the one-sample and paired t-tests, alternative refers to the true mean of the 
-  parent population in relation to the hypothesized value \code{mu}. For the standard 
-  and Welch modified two-sample t-tests, alternative refers to the difference between 
-  the true population mean for \code{x} and that for \code{y}, in relation to \code{mu},
-  For the one-sample t-tests, alternative refers to the true mean of the parent population 
-  in relation to the hypothesized value \code{mu}. For the standard and Welch modified 
-  two-sample t-tests, alternative refers to the difference between the true population 
+  For the standard two-sample tests, \code{alternative} refers to the difference between
+  the true population mean for \code{x} and that for \code{y}, in relation to \code{mu}.
+  For the one-sample and paired t-tests, \code{alternative} refers to the true mean of the
+  parent population in relation to the hypothesized value \code{mu}. For the standard
+  and Welch modified two-sample t-tests, \code{alternative} refers to the difference between
+  the true population mean for \code{x} and that for \code{y}, in relation to \code{mu}.
+  For the one-sample t-tests, alternative refers to the true mean of the parent population
+  in relation to the hypothesized value \code{mu}. For the standard and Welch modified
+  two-sample t-tests, alternative refers to the difference between the true population
   mean for \code{x} and that for \code{y}, in relation to \code{mu}.}
-  \item{mu}{a single number representing the value of the mean or difference in means 
+  \item{mu}{is a single number representing the value of the mean or difference in means
   specified by the null hypothesis.}
-  \item{var.equal}{logical flag: if \code{TRUE}, the variances of the parent populations 
-  of \code{x} and \code{y} are assumed equal. Argument \code{var.equal} should be supplied 
+  \item{var.equal}{logical flag: if \code{TRUE}, the variances of the parent populations
+  of \code{x} and \code{y} are assumed equal. Argument \code{var.equal} should be supplied
   only for the two-sample tests.}
-  \item{conf.level}{confidence level for the returned confidence interval, 
-  restricted to lie between zero and one.}
+  \item{conf.level}{is the confidence level for the returned confidence
+  interval; it must lie between zero and one.}
 }
+
 \details{
-\item{One-Sample t-Test}{The arguments \code{"two.sided"}, and \code{var.equal} 
-determine the type of test. If \code{y} is \code{NULL}, a one-sample t-test is 
-carried out with \code{x}.} 
-\item{Standard Two-Sample t-Test}{If y is not \code{NULL}, either a standard or 
-Welch modified two-sample t-test is performed, depending on whether \code{var.equal} is \code{TRUE} 
-or \code{FALSE}. 
-}}
+If \code{y} is \code{NULL}, a one-sample t-test is
+carried out with \code{x}. If y is not \code{NULL}, either a standard or
+Welch modified two-sample t-test is performed, depending on whether \code{var.equal} is \code{TRUE}
+or \code{FALSE}.
+}
 
-\value{A list of class \code{"htest"}, containing the following components: 
-  \item{statistic}{the t-statistic, with names attribute \code{"t"}.}
-  \item{parameters}{the degrees of freedom of the t-distribution associated with statistic. 
-  Component parameters has names attribute \code{"df"}.}
+\value{A list of class \code{htest}, containing the following components:
+  \item{statistic}{the t-statistic, with names attribute \code{"t"}}
+  \item{parameters}{is the degrees of freedom of the t-distribution
+  associated with statistic.
+  Component \code{parameters} has names attribute \code{"df"}.}
   \item{p.value}{the p-value for the test.}
-  \item{conf.int }{a confidence interval (vector of length 2) 
-  for the true mean or difference in means. The confidence level 
-  is recorded in the attribute \code{conf.level}. When alternative 
-  is not \code{"two.sided"}, the confidence interval will be half-infinite, 
-  to reflect the interpretation of a confidence interval as the set of all 
-  values \code{k} for which one would not reject the null hypothesis that 
-  the true mean or difference in means is \code{k} . Here infinity will be 
-  represented by \code{Inf}.} 
-  \item{estimate}{vector of length 1 or 2, giving the sample mean(s) 
-  or mean of differences; these estimate the corresponding population 
-  parameters. Component estimate has a names attribute describing its elements. }
-  \item{null.value} {the value of the mean or difference in means specified by 
-  the null hypothesis. This equals the input argument \code{mu}. Component 
+  \item{conf.int }{is a confidence interval (vector of length 2)
+  for the true mean or difference in means. The confidence level
+  is recorded in the attribute \code{conf.level}. When alternative
+  is not \code{"two.sided"}, the confidence interval will be half-infinite,
+  to reflect the interpretation of a confidence interval as the set of all
+  values \code{k} for which one would not reject the null hypothesis that
+  the true mean or difference in means is \code{k} . Here infinity will be
+  represented by \code{Inf}.}
+  \item{estimate}{vector of length 1 or 2, giving the sample mean(s)
+  or mean of differences; these estimate the corresponding population
+  parameters. Component \code{estimate} has a names attribute describing its elements.}
+  \item{null.value}{the value of the mean or difference in means specified by
+  the null hypothesis. This equals the input argument \code{mu}. Component
   \code{null.value} has a names attribute describing its elements.}
-  \item{alternative}{records the value of the input argument alternative: 
-  \code{"greater"} , \code{"less"} or \code{"two.sided"}. }
-  \item{data.name}{a character string (vector of length 1) containing 
-  the names x and y for the two summarized samples. } 
+  \item{alternative}{records the value of the input argument alternative:
+  \code{"greater"} , \code{"less"} or \code{"two.sided"}.}
+  \item{data.name}{a character string (vector of length 1) containing
+  the names x and y for the two summarized samples.}
 }
 
-\section{Null Hypothesis}{For the one-sample t-test, the null hypothesis is that the mean of 
-the population from which \code{x} is drawn is \code{mu}. For the standard and Welch modified 
-two-sample t-tests, the null hypothesis is that the population mean for \code{x} less that for 
-\code{y} is \code{mu}. 
+\section{Null Hypothesis}{For the one-sample t-test, the null hypothesis is that the mean of
+the population from which \code{x} is drawn is \code{mu}. For the standard and Welch modified
+two-sample t-tests, the null hypothesis is that the population mean for \code{x} less that for
+\code{y} is \code{mu}.
 
-The alternative hypothesis in each case indicates the direction of divergence of the population 
-mean for \code{x} (or difference of means for \code{x} and \code{y}) from \code{mu} 
-(i.e., \code{"greater"}, \code{"less"}, \code{"two.sided"}). 
+The alternative hypothesis in each case indicates the direction of divergence of the population
+mean for \code{x} (or difference of means for \code{x} and \code{y}) from \code{mu}
+(i.e., \code{"greater"}, \code{"less"}, or \code{"two.sided"}).
 }
 
-\section{Test Assumptions}{The assumption of equal population variances is central to the 
-standard two-sample t-test. This test can be misleading when population variances are not 
-equal, as the null distribution of the test statistic is no longer a t-distribution. If 
-the assumption of equal variances is doubtful with respect to a particular dataset, the 
-Welch modification of the t-test should be used. 
+\section{Test Assumptions}{The assumption of equal population variances is central to the
+standard two-sample t-test. This test can be misleading when population variances are not
+equal, as the null distribution of the test statistic is no longer a t-distribution. If
+the assumption of equal variances is doubtful with respect to a particular dataset, the
+Welch modification of the t-test should be used.
 
-The t-test and the associated confidence interval are quite robust with respect to level 
-toward heavy-tailed non-Gaussian distributions (e.g., data with outliers). However, the 
-t-test is quite non-robust with respect to power, and the confidence interval is quite 
-non-robust with respect to average length, toward these same types of distributions. 
+The t-test and the associated confidence interval are quite robust with respect to level
+toward heavy-tailed non-Gaussian distributions (e.g., data with outliers). However, the
+t-test is non-robust with respect to power, and the confidence interval is
+non-robust with respect to average length, toward these same types of distributions.
 }
 
-\section{Confidence Intervals}{For each of the above tests, an expression for the 
-related confidence interval (returned component conf.int) can be obtained in the usual 
-way by inverting the expression for the test statistic. Note however that, as explained 
-under the description of \code{conf.int}, the confidence interval will be half-infinite when 
-alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}. }
+\section{Confidence Intervals}{For each of the above tests, an expression for the
+related confidence interval (returned component \code{conf.int}) can be obtained in the usual
+way by inverting the expression for the test statistic. Note that, as explained
+under the description of \code{conf.int}, the confidence interval will be half-infinite when
+alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}.}
 
 
 \references{
-Kitchens, L.J. (2003). \emph{Basic Statistics and Data Analysis}. Duxbury. 
+Kitchens, L.J. (2003). \emph{Basic Statistics and Data Analysis}. Duxbury.
 
-Hogg, R. V. and Craig, A. T. (1970). \emph{Introduction to Mathematical Statistics, 3rd ed}. Toronto, Canada: Macmillan. 
+Hogg, R. V. and Craig, A. T. (1970). \emph{Introduction to Mathematical Statistics, 3rd ed}. Toronto, Canada: Macmillan.
 
-Mood, A. M., Graybill, F. A. and Boes, D. C. (1974). \emph{Introduction to the Theory of Statistics, 3rd ed}. New York: McGraw-Hill. 
+Mood, A. M., Graybill, F. A. and Boes, D. C. (1974). \emph{Introduction to the Theory of Statistics, 3rd ed}. New York: McGraw-Hill.
 
-Snedecor, G. W. and Cochran, W. G. (1980). \emph{Statistical Methods, 7th ed}. Ames, Iowa: Iowa State University Press. 
+Snedecor, G. W. and Cochran, W. G. (1980). \emph{Statistical Methods, 7th ed}. Ames, Iowa: Iowa State University Press.
 }
 \author{Alan T. Arnholt}
 

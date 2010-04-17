@@ -17,7 +17,7 @@
 str(Schizop2)
 attach(Schizop2)
 EDA(score)
-sign.test(score,md=22,alternative="greater")
+SIGN.test(score,md=22,alternative="greater")
 detach(Schizop2)
 }
 \keyword{datasets}

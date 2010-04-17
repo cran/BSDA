@@ -19,7 +19,7 @@ str(Grnriv2)
 attach(Grnriv2)
 EDA(thick)
 t.test(thick,mu=8,alternative="less")
-sign.test(thick,md=8,alternative="less")
+SIGN.test(thick,md=8,alternative="less")
 detach(Grnriv2)
 }
 \keyword{datasets}

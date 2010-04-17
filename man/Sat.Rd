@@ -5,7 +5,7 @@
 \description{
   Data for Statistical Insight Chapter 9
 }
-\usage{Sat}
+\usage{data(Sat)}
 \format{
   A data frame with 51 observations on the following 16 variables.
   \describe{

@@ -5,7 +5,7 @@
 \description{
   Data for Exercise 10.15
 }
-\usage{Chicken}
+\usage{data(Chicken)}
 \format{
   A data frame with 13 observations on the following 3 variables.
   \describe{

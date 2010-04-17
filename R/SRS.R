@@ -1,4 +1,4 @@
-"SRS" <-
+SRS <-
 function(POPvalues,n)
 {
 # SRS generates all possible SRS's of size n

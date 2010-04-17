@@ -3,7 +3,7 @@
 \docType{data}
 \title{Daily receipts for a small hardware store for 31 working days}
 \description{
-  Data for unknown problem
+  Data for Example 2.18
 }
 \usage{Hardware}
 \format{
@@ -15,9 +15,6 @@
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 
 \examples{
-str(Hardware)
-attach(Hardware)
-stem(receipt)
-detach(Hardware)
+data(Hardware)
 }
 \keyword{datasets}

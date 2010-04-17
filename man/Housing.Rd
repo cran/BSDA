@@ -30,8 +30,8 @@ plot(density(X1993),col="red",xlab="",ylab="",main="",ylim=c(0,.00003))
 lines(density(X1984),col="orange")
 par(mfrow=c(1,1))
 boxplot(X1993,X1984,col=c("pink","orange"),names=c("1993","1984"),main="Problem 5.82")
-sign.test(X1984,conf.level=.98)
-sign.test(X1993,conf.level=.98)
+SIGN.test(X1984,conf.level=.98)
+SIGN.test(X1993,conf.level=.98)
 # 98% CI -> 63591.1 79622.56 and 85591.69 109915.4
 # Placing on a common number line...
 my.axis <- function(side, at, labels,...)

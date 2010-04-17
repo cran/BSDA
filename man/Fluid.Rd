@@ -27,7 +27,7 @@
 str(Fluid)
 attach(Fluid)
 stem(X34kV)
-sign.test(X34kV)
+SIGN.test(X34kV)
 detach(Fluid)
 }
 \keyword{datasets}

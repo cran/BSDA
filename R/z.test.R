@@ -1,4 +1,4 @@
-"z.test" <-
+z.test <-
 function(x, y = NULL, alternative = "two.sided", mu = 0, sigma.x = NULL, 
     sigma.y = NULL, conf.level = 0.95)
 {

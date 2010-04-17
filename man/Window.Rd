@@ -17,7 +17,7 @@
 \examples{
 str(Window)
 attach(Window)
-sign.test(Leakage,md=.125,alternative="greater")
+SIGN.test(Leakage,md=.125,alternative="greater")
 detach(Window)
 }
 \keyword{datasets}

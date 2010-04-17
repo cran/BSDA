@@ -5,7 +5,7 @@
 \description{
   Data for Exercises 5.14 and 7.49
 }
-\usage{Dopamine}
+\usage{data(Dopamine)}
 \format{
   A data frame with 25 observations on the following 4 variables.
   \describe{

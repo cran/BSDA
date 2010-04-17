@@ -1,4 +1,4 @@
-"zsum.test" <-
+zsum.test <-
 function(mean.x, sigma.x = NULL, n.x = NULL, mean.y = NULL, sigma.y = NULL,
     n.y = NULL, alternative = "two.sided", mu = 0, conf.level = 0.95)
 {

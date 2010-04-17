@@ -17,7 +17,7 @@
 \examples{
 str(Lethal)
 attach(Lethal)
-sign.test(survival,md=45,alternative="less")
+SIGN.test(survival,md=45,alternative="less")
 detach(Lethal)
 }
 \keyword{datasets}

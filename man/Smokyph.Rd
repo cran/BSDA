@@ -21,7 +21,7 @@
 str(Smokyph)
 attach(Smokyph)
 t.test(waterph,mu=7)
-sign.test(waterph,md=7)
+SIGN.test(waterph,md=7)
 tapply(waterph,code,mean)
 stripchart(waterph~code,method="stack",pch=19,col=c("red","blue"))
 qqnorm(waterph[code=="low"])

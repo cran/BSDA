@@ -19,7 +19,7 @@ str(Marked)
 attach(Marked)
 EDA(percent)
 t.test(percent,mu=60,alternative="greater")
-sign.test(percent,md=60,alternative="greater")
+SIGN.test(percent,md=60,alternative="greater")
 detach(Marked)
 }
 \keyword{datasets}

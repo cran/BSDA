@@ -6,16 +6,16 @@
  confidence intervals for one of the parameters mean (Mu), variance 
  (Sigma), or proportion of successes (Pi).}
 \usage{
-CIsim(samples=100, n=30, parameter=0.5, sigma=1, conf.level = 0.95, type = "Mean")
+CIsim(samples=100, n=30, mu=0, sigma=1, conf.level = 0.95, type = "Mean")
 }
 
 \arguments{
   \item{samples}{the number of samples desired.}
   \item{n}{the size of each sample.}
-  \item{parameter}{if constructing confidence intervals for the population mean or 
-  the population variance, parameter is the population mean (i.e., type is one of 
+  \item{mu}{if constructing confidence intervals for the population mean or 
+  the population variance, mu is the population mean (i.e., type is one of 
   either \code{"Mean"}, or \code{"Var"}). If constructing confidence intervals for the 
-  poulation proportion of successes, the value entered for \code{parameter} represents 
+  poulation proportion of successes, the value entered for mu represents 
   the population proportion of successes \code{(Pi)}, and as such, must be a 
   number between 0 and 1.}
   \item{sigma}{the population standard deviation. \code{sigma} is not required 
@@ -38,10 +38,10 @@ confidence intervals that do not contain the parameter of interest
 are counted and reported in the commands window. 
 }
 
-\author{Alan T. Arnholt improvements to code provided by William Gowin}
+\author{Alan T. Arnholt}
 
 \examples{
-CIsim(samples=100, n=30, parameter=100, sigma=10)
+CIsim(100, 30, 100, 10)
     # Simulates 100 samples of size 30 from 
     # a normal distribution with mean 100
     # and standard deviation 10.  From the
@@ -49,7 +49,7 @@ CIsim(samples=100, n=30, parameter=100, sigma=10)
     # intervals for the Mean are constructed 
     # and depicted in the graph. 
 
-CIsim(samples=100, n=30, parameter=100, sigma=10, type="Var")
+CIsim(100, 30, 100, 10, type="Var")
     # Simulates 100 samples of size 30 from 
     # a normal distribution with mean 100
     # and standard deviation 10.  From the
@@ -57,7 +57,7 @@ CIsim(samples=100, n=30, parameter=100, sigma=10, type="Var")
     # intervals for the variance are constructed 
     # and depicted in the graph.
     
-CIsim(samples=100, n=50, parameter=.5, type="Pi", conf.level=.90)     
+CIsim(100, 50, .5, type="Pi", conf.level=.90)     
     # Simulates 100 samples of size 50 from 
     # a binomial distribution where the population
     # proportion of successes is 0.5.  From the

@@ -18,7 +18,7 @@ str(Tenness)
 attach(Tenness)
 EDA(score)
 t.test(score,mu=30,alternative="less")
-sign.test(score,md=30,alternative="less")
+SIGN.test(score,md=30,alternative="less")
 detach(Tenness)
 }
 \keyword{datasets}

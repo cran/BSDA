@@ -5,7 +5,7 @@
 \description{
   Data for Exercise 2.90
 }
-\usage{Dyslexia}
+\usage{data(Dyslexia)}
 \format{
   A data frame with 8 observations on the following 7 variables.
   \describe{

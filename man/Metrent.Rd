@@ -5,7 +5,7 @@
 \description{
   Data for Exercise 5.117
 }
-\usage{Metrent}
+\usage{data(Metrent)}
 \format{
   A data frame with 46 observations on the following variable.
   \describe{

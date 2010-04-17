@@ -33,7 +33,7 @@ str(Aids)
 attach(Aids)
 EDA(duration)
 t.test(duration,mu=30,alternative="greater")
-sign.test(duration,md=24,alternative="greater")
+SIGN.test(duration,md=24,alternative="greater")
 detach(Aids)
 }
 

@@ -19,7 +19,7 @@ str(Statelaw)
 attach(Statelaw)
 summary(cost)
 EDA(cost)
-sign.test(cost,md=8,alternative="less")
+SIGN.test(cost,md=8,alternative="less")
 detach(Statelaw)
 }
 \keyword{datasets}

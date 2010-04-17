@@ -3,7 +3,7 @@
 \docType{data}
 \title{ Consumer Reports (Oct 94) rating of toaster ovens versus the cost}
 \description{
-  Data for Exercise 9.36
+  Data for Exercise 9.35
 }
 \usage{Toaster}
 \format{
@@ -16,13 +16,6 @@
 }
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 \examples{
-str(Toaster)
-attach(Toaster)
-plot(score,cost)
-model <- lm(cost~score)
-abline(model)
-summary(model)
-rm(model)
-detach(Toaster)
+data(Toaster)
 }
 \keyword{datasets}

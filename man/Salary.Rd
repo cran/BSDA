@@ -14,11 +14,6 @@
 }
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 \examples{
-str(Salary)
-attach(Salary)
-qqnorm(salary,main="Problem 3.66")
-qqline(salary)
-shapiro.test(salary)
-detach(Salary)
+data(Salary)
 }
 \keyword{datasets}

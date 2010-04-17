@@ -1,6 +1,6 @@
-"tsum.test" <-
+tsum.test <-
 function(mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL, n.y = NULL,
-    alternative = "two.sided", mu = 0, var.equal = TRUE, conf.level = 0.95)
+    alternative = "two.sided", mu = 0, var.equal = FALSE, conf.level = 0.95)
 {
     alt.expanded <- if(!missing(alternative)) char.expand(alternative,
             c("two.sided", "greater", "less"), stop(

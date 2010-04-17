@@ -18,7 +18,7 @@
 str(Manager)
 attach(Manager)
 stem(salary)
-sign.test(salary)
+SIGN.test(salary)
 detach(Manager)
 }
 \keyword{datasets}

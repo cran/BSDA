@@ -17,7 +17,7 @@
 str(Stable)
 attach(Stable)
 EDA(time)
-sign.test(time,md=98.5,alternative="greater")
+SIGN.test(time,md=98.5,alternative="greater")
 detach(Stable)
 }
 \keyword{datasets}

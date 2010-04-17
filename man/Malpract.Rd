@@ -17,7 +17,7 @@
 \examples{
 str(Malpract)
 attach(Malpract)
-sign.test(award,conf.level=.90)
+SIGN.test(award,conf.level=.90)
 detach(Malpract)
 }
 \keyword{datasets}

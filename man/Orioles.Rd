@@ -16,9 +16,6 @@
 }
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 \examples{
-str(Orioles)
-attach(Orioles)
-stripchart(X1999salary,method="stack",pch=19,col="blue")
-detach(Orioles)
+data(Orioles)
 }
 \keyword{datasets}

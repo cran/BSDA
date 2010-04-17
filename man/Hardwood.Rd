@@ -3,28 +3,21 @@
 \docType{data}
 \title{Tensile strength of Kraft paper for different percentages of hardwood in the batches of pulp}
 \description{
-  Data for Exercise 9.34
+  Data for Exercise 9.33
 }
 \usage{Hardwood}
 \format{
-  A data frame with 19 observations on the following 2 variables.
+  A data frame with 19 observations on the following variable.
   \describe{
-    \item{\code{tensile}}{a numeric vector}
-    \item{\code{hardwood}}{a numeric vector}
+    \item{\code{tensile.hardwood}}{a factor with levels \code{1.110000000e+001  1.500000000e+000} \code{2.000000000e+001    2.000000000e+000} \code{2.190000000e+001    1.500000000e+001} \code{2.400000000e+001    3.000000000e+000} \code{2.610000000e+001    4.000000000e+000} \code{2.780000000e+001    1.400000000e+001} \code{3.000000000e+001    4.500000000e+000} \code{3.380000000e+001    5.000000000e+000} \code{3.400000000e+001    5.500000000e+000} \code{3.810000000e+001    6.000000000e+000} \code{3.990000000e+001    6.500000000e+000} \code{4.200000000e+001    7.000000000e+000} \code{4.280000000e+001    1.300000000e+001} \code{4.610000000e+001    8.000000000e+000} \code{4.800000000e+001    1.200000000e+001} \code{5.200000000e+001    1.000000000e+001} \code{5.250000000e+001    1.100000000e+001} \code{5.310000000e+001    9.000000000e+000} \code{6.300000000e+000    1.000000000e+000}}
   }
 }
-
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 
 \examples{
 str(Hardwood)
 attach(Hardwood)
-plot(hardwood,tensile)
-model <- lm(tensile~hardwood)
-abline(model)
-summary(model)
-anova(model)
-rm(model)
-detach(Hardwood)
+
+
 }
 \keyword{datasets}

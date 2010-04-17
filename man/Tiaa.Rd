@@ -17,9 +17,6 @@
 }
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 \examples{
-str(Tiaa)
-attach(Tiaa)
-boxplot(crefstk,crefgwt)
-detach(Tiaa)
+data(Tiaa)
 }
 \keyword{datasets}

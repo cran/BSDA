@@ -22,7 +22,7 @@
 str(Cancer)
 attach(Cancer)
 EDA(stomach)
-sign.test(stomach,md=100,alternative="greater")
+SIGN.test(stomach,md=100,alternative="greater")
 detach(Cancer)
 }
 \keyword{datasets}

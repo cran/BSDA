@@ -21,7 +21,7 @@
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 
 \examples{
-str(Absent)
+data(Absent)
 attach(Absent)
 table(days)
 barplot(table(days),col="pink")

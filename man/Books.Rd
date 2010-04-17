@@ -16,13 +16,6 @@
 \source{Kitchens, L. J. (2003) \emph{Basic Statistics and Data Analysis}. Duxbury}
 
 \examples{
-str(Books)
-attach(Books)
-plot(book, spelling)
-model <- lm(spelling~book)
-abline(model)
-summary(model)
-detach(Books)
-rm(model)
+data(Books)
 }
 \keyword{datasets}

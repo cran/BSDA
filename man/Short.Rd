@@ -27,7 +27,7 @@ str(Short)
 attach(Short)
 hist(Parallax)
 EDA(Parallax)
-sign.test(Parallax,md=8.798)
+SIGN.test(Parallax,md=8.798)
 t.test(Parallax,mu=8.798)
 detach(Short)
 }
