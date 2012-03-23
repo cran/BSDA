@@ -10,8 +10,8 @@ Data and functions for the book \emph{Basic Statistics and Data Analysis}
 \tabular{ll}{
 Package: \tab PASWR\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2010-04-16\cr
+Version: \tab 1.01\cr
+Date: \tab 2012-03-23\cr
 License: \tab GPL (>=2) \cr
 }
 The package BSDA provides data and functions for the book

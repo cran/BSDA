@@ -252,4 +252,3 @@ function(x, y = NULL, md = 0, alternative = "two.sided", conf.level = 0.95)
      return(Confidence.Intervals)
     }
 }
-

@@ -74,4 +74,3 @@ function(x, y = NULL, alternative = "two.sided", mu = 0, sigma.x = NULL,
     attr(rval, "class") <- "htest"
     return(rval)
 }
-

@@ -8,4 +8,3 @@ N <- length(POPvalues)
 store <- t(Combinations(N,n))
 matrix(POPvalues[t(store)],nrow=nrow(store),byrow=TRUE)
 }
-

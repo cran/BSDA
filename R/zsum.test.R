@@ -91,4 +91,3 @@ function(mean.x, sigma.x = NULL, n.x = NULL, mean.y = NULL, sigma.y = NULL,
     attr(rval, "class") <- "htest"
     return(rval)
 }
-

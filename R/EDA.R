@@ -89,4 +89,3 @@ function(x, trim = 0.05)
         "Skewness", "SW p-val")
     return(TOT)
 }
-

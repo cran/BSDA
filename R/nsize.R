@@ -37,4 +37,3 @@ function(b, sigma = NULL, p = 0.5, conf.level = 0.95, type = "mu")
         cat("\n\n")
     }
 }
-

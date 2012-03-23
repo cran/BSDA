@@ -22,33 +22,33 @@ stop("Variance must be a positive value")
 
 if (type == "Mean")
    {
- junk <- rnorm(N*n, mu, sigma)
- jmat <- matrix(junk, N, n)
- xbar <- apply(jmat, 1, mean)
- ll <- xbar - qnorm(1 - alpha/2)*sigma/sqrt(n)
- ul <- xbar + qnorm(1 - alpha/2)*sigma/sqrt(n)
- notin <- sum((ll > mu) + (ul < mu))
- percentage <- round((notin/N) * 100,2)
+	 junk <- rnorm(N*n, mu, sigma)
+	 jmat <- matrix(junk, N, n)
+	 xbar <- apply(jmat, 1, mean)
+	 ll <- xbar - qnorm(1 - alpha/2)*sigma/sqrt(n)
+	 ul <- xbar + qnorm(1 - alpha/2)*sigma/sqrt(n)
+	 notin <- sum((ll > mu) + (ul < mu))
+	 percentage <- round((notin/N) * 100,2)
 plot(ll, type = "n", ylim = c(min(ll), max(ul)), xlab = " ", ylab = " ")
 title(sub=bquote(paste("Note: ",.(percentage),"% of the random confidence intervals do not contain ", mu ,"=", .(mu))))
 title(main=bquote(paste(.(N), " random ", .(CL), "% confidence intervals where ", mu,  " = ", .(mu) )))
         for(i in 1:N)
-      {
-      low<-ll[i];
-      high<-ul[i];
-      if(low < mu & high > mu)
-      {
+    	  {
+      		low<-ll[i];
+      		high<-ul[i];
+      		if(low < mu & high > mu)
+      		{
           segments(i,low,i,high)
           }
-      else if(low > mu & high > mu )
-      {
+      		else if(low > mu & high > mu )
+      		{
           segments(i,low,i,high, col=Aorange, lwd=5)
           }
-      else
+      		else
           {
           segments(i,low,i,high, col=Adkblue, lwd=5)
           }
-      }
+    	  }
         abline(h = mu)
         cat(percentage,"% of the random confidence intervals do not contain Mu =", mu,".", "\n")
     }
@@ -65,23 +65,23 @@ else if (type == "Var")
 plot(ll, type = "n", ylim = c(min(ll), max(ul)), xlab = " ", ylab = " " )
 title(sub=bquote(paste("Note: ",.(percentage),"% of the random confidence intervals do not contain ", sigma^2 ,"=", .(variance))))
 title(main=bquote(paste(.(N), " random ", .(CL), "% confidence intervals where ", sigma^2,  " = ", .(variance) )))
-    for(i in 1:N)
-    {
-    low<-ll[i]
-    high<-ul[i]
-    if(low < variance & high > variance)
-    {
+	    for(i in 1:N)
+	    {
+		    low<-ll[i]
+		    high<-ul[i]
+		    if(low < variance & high > variance)
+		    {
         segments(i,low,i,high)
         }
-    else if( low > variance & high > variance )
-    {
+		    else if( low > variance & high > variance )
+		    {
         segments(i,low,i,high, col=Aorange, lwd=5)
         }
-    else
+		    else
         {
         segments(i,low,i,high, col=Adkblue, lwd=5)
         }
-    }
+	    }
       abline(h = variance)
       cat(percentage,"% of the random confidence intervals do not contain Var =", sigma^2,".", "\n")
     }
@@ -96,25 +96,24 @@ else if (type == "Pi")
 plot(ll, type = "n", ylim = c(min(ll), max(ul)), xlab = " ", ylab = " " )
 title(sub=bquote(paste("Note: ",.(percentage),"% of the random confidence intervals do not contain ",pi,"=",.(mu))))
 title(main=bquote(paste(.(N), " random ", .(CL), "% confidence intervals where ", pi,  "=", .(mu) )))
-    for(i in 1:N)
-    {
-  low<-ll[i]
-  high<-ul[i]
-  if( low < mu & high > mu)
-    {
+	    for(i in 1:N)
+	    {
+  		low<-ll[i]
+  		high<-ul[i]
+  		if( low < mu & high > mu)
+  		  {
         segments(i,low,i,high)
         }
-    else if( low > mu & high > mu )
-    {
+  		  else if( low > mu & high > mu )
+  		  {
         segments(i,low,i,high, col=Aorange, lwd=5)
         }
-    else
+  		  else
         {
         segments(i,low,i,high, col=Adkblue, lwd=5)
         }
-    }
+	    }
       abline(h = mu)
       cat(percentage,"% of the random confidence intervals do not contain Pi =", mu,".", "\n")
     }
 }
-

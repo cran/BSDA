@@ -36,4 +36,3 @@ list(m=m,sig=sig)),side=1,line=3,col=Fontcol)
     lines(c(upper, upper), c(0, dnorm(upper, m, sig)), lwd = 2)
     par(mar=c(5.1,4.1,4.1,2.1))
 }
-
