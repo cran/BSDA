@@ -1,16 +1,23 @@
 Package: BSDA
 Type: Package
 Title: Basic Statistics and Data Analysis
-Version: 1.01
-Date: 2012-03-23
-LazyLoad: yes
+Version: 1.2.0
+Date: 2017-07-29
 LazyData: yes
-Author: Alan T. Arnholt
+Authors@R: c(
+    person("Alan T.", "Arnholt", email = "arnholtat@appstate.edu", role = c("aut", "cre")),
+    person("Ben", "Evans", email = "ben.evans@temple.edu", role = "aut"))
+Maintainer: Alan T. Arnholt <arnholtat@appstate.edu>
 Description: Data sets for book "Basic Statistics and Data Analysis" by
-        Larry J. Kitchens
-Maintainer: Alan T. Arnholt <arnholt@math.appstate.edu>
-Depends: e1071, lattice
+    Larry J. Kitchens.
+Depends: lattice, R (>= 2.10)
+Imports: e1071
 License: GPL (>= 2)
-Packaged: 2012-03-23 14:00:49 UTC; Alan
+Suggests: ggplot2 (>= 2.1.0), dplyr, tidyr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-07-29 20:22:26 UTC; alan1
+Author: Alan T. Arnholt [aut, cre],
+  Ben Evans [aut]
 Repository: CRAN
-Date/Publication: 2012-03-23 14:25:01
+Date/Publication: 2017-07-30 15:35:13 UTC

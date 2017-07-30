@@ -1,3 +1,61 @@
+#' Confidence Interval Simulation Program
+#' 
+#' This program simulates random samples from which it constructs confidence
+#' intervals for one of the parameters mean (Mu), variance (Sigma), or
+#' proportion of successes (Pi).
+#' 
+#' Default is to construct confidence intervals for the population mean.
+#' Simulated confidence intervals for the population variance or population
+#' proportion of successes are possible by selecting the appropriate value in
+#' the type argument.
+#' 
+#' @param samples the number of samples desired.
+#' @param n the size of each sample.
+#' @param mu if constructing confidence intervals for the population mean or
+#' the population variance, mu is the population mean (i.e., type is one of
+#' either \code{"Mean"}, or \code{"Var"}). If constructing confidence intervals
+#' for the poulation proportion of successes, the value entered for mu
+#' represents the population proportion of successes \code{(Pi)}, and as such,
+#' must be a number between 0 and 1.
+#' @param sigma the population standard deviation. \code{sigma} is not required
+#' if confidence intervals are of type \code{"Pi"}.
+#' @param conf.level confidence level for the graphed confidence intervals,
+#' restricted to lie between zero and one.
+#' @param type character string, one of \code{"Mean"}, \code{"Var"} or
+#' \code{"Pi"}, or just the initial letter of each, indicating the type of
+#' confidence interval simulation to perform.
+#' @return Graph depicts simulated confidence intervals. The number of
+#' confidence intervals that do not contain the parameter of interest are
+#' counted and reported in the commands window.
+#' @author Alan T. Arnholt
+#' @keywords distribution
+#' @examples
+#' 
+#' CIsim(100, 30, 100, 10)
+#'     # Simulates 100 samples of size 30 from 
+#'     # a normal distribution with mean 100
+#'     # and standard deviation 10.  From the
+#'     # 100 simulated samples, 95% confidence
+#'     # intervals for the Mean are constructed 
+#'     # and depicted in the graph. 
+#' 
+#' CIsim(100, 30, 100, 10, type="Var")
+#'     # Simulates 100 samples of size 30 from 
+#'     # a normal distribution with mean 100
+#'     # and standard deviation 10.  From the
+#'     # 100 simulated samples, 95% confidence
+#'     # intervals for the variance are constructed 
+#'     # and depicted in the graph.
+#'     
+#' CIsim(100, 50, .5, type="Pi", conf.level=.90)     
+#'     # Simulates 100 samples of size 50 from 
+#'     # a binomial distribution where the population
+#'     # proportion of successes is 0.5.  From the
+#'     # 100 simulated samples, 90% confidence
+#'     # intervals for Pi are constructed 
+#'     # and depicted in the graph.  
+#' 
+#' @export CIsim
 CIsim <-
 function(samples=100, n=30, mu=0, sigma=1, conf.level = 0.95, type ="Mean")
 {

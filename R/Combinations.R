@@ -1,3 +1,22 @@
+#' Combinations
+#' 
+#' Computes all possible combinations of \code{n} objects taken \code{k} at a
+#' time.
+#' 
+#' 
+#' @param n a number.
+#' @param k a number less than or equal to \code{n}.
+#' @return Returns a matrix containing the possible combinations of \code{n}
+#' objects taken \code{k} at a time.
+#' @seealso \code{\link{SRS}}
+#' @keywords distribution
+#' @examples
+#' 
+#' Combinations(5,2)
+#'     # The columns in the matrix list the values of the 10 possible
+#'     # combinations of 5 things taken 2 at a time.
+#' 
+#' @export Combinations
 Combinations <-
 function(n, k){
   # Compute all n choose k combinations of size k from 1:n

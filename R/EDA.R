@@ -1,7 +1,34 @@
+#' Exploratory Data Anaalysis
+#' 
+#' Function that produces a histogram, density plot, boxplot, and Q-Q plot.
+#' 
+#' Will not return command window information on data sets containing more than
+#' 5000 observations.  It will however still produce graphical output for data
+#' sets containing more than 5000 observations.
+#' 
+#' @param x numeric vector. \code{NA}s and \code{Inf}s are allowed but will be
+#' removed.
+#' @param trim fraction (between 0 and 0.5, inclusive) of values to be trimmed
+#' from each end of the ordered data.  If \code{trim = 0.5}, the result is the
+#' median.
+#' @return Function returns various measures of center and location. The values
+#' returned for the Quartiles are based on the definitions provided in
+#' \cite{BSDA}. The boxplot is based on the Quartiles returned in the commands
+#' window.
+#' @note Requires package \pkg{e1071}.
+#' @author Alan T. Arnholt
+#' @keywords univar
+#' @examples
+#' 
+#' EDA(rnorm(100))
+#'     # Produces four graphs for the 100 randomly
+#'     # generated standard normal variates.
+#' 
+#' @export EDA
 EDA <-
 function(x, trim = 0.05)
 {
-    require(e1071)
+    # require(e1071)
     #rgb(0, 128/255, 1, names="Adkblue") #Alan's dark blue
     #rgb(169/255, 226/255, 1, names="Altblue") #Alan's light blue
     Altblue <- "#A9E2FF"
