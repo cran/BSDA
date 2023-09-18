@@ -1,7 +1,7 @@
-b57197786d69b047f37b33db42b1d4b7 *DESCRIPTION
+660ca16d03591ffa4c8882c77fba82c7 *DESCRIPTION
 7caf8aee48579b8a96b5435bb4a3c21b *NAMESPACE
-9f79e23934bb0f9b6b810084bf5db3ce *NEWS.md
-4dbc550f2ec8904f1536c7416773bce8 *R/BSDA-package.R
+713fbb3cc7c2395f7ba7ab50f9afc38a *NEWS.md
+119580cfbc8f543fb8d411ed734b43b8 *R/BSDA-package.R
 d96e8e08c715c3dc16f4d73317f5c590 *R/CIsim.R
 0709638ef25577528bb7b723ca774dbb *R/Combinations.R
 7e2c41fbe359532ab0fd885966703a6f *R/EDA.R
@@ -13,7 +13,7 @@ a7f9a63efcd6bece0a202823ad03ec7d *R/nsize.R
 5981dfd6c6afcfaebda091c3c139bf49 *R/tsum.test.R
 1749b3f78a42d651a353737572251d2d *R/z.test.R
 1fec86ef21091f20bd4dcd6e7f80048c *R/zsum.test.R
-3517c15185547c207f624fefd811ec74 *README.md
+644948589bee65154e598beb88a8c7e5 *README.md
 a7153712cc61958aad32eaa994660196 *data/Abbey.rda
 d99ddb3444284e11f880e612e99e07fe *data/Abc.rda
 b571420ad67e7ea80eed1b524912216d *data/Abilene.rda
@@ -400,7 +400,7 @@ f0271b3f04b23e1d141fbbc4c59118e4 *man/Coaxial.Rd
 d40cd0ba30c1b86861e01d1b3baf74bf *man/Commute.Rd
 0f1c26060bb6a87babf3bec805ec1b71 *man/Concept.Rd
 d1656500957ac883648a2added096674 *man/Concrete.Rd
-d3a1c482e7af32c2d6b81899870a8660 *man/Corn.Rd
+ff7d7df06d5ef2a2889254aaad81e862 *man/Corn.Rd
 8188eefb52029ee6396a60fb973885a7 *man/Correlat.Rd
 4e64a058e7e35daacbd72ff05ecaa12f *man/Counsel.Rd
 abb306f5ecc4f31c0f89be7508e84d25 *man/Cpi.Rd
@@ -437,7 +437,7 @@ a826b3cac26830f639ae109bf12c11cf *man/Epaminicompact.Rd
 df2b09222e2e1c23151654512d41aea4 *man/Epatwoseater.Rd
 b1f2d5b1a39793668a47d0a3ac7dc1ef *man/Executiv.Rd
 aa1fad8576affe6ba5eb8dd474605b69 *man/Exercise.Rd
-f9c7daf80532872cc42161a22a60d519 *man/Fabric.Rd
+0ce523a574af97a39443b635d2dd83c3 *man/Fabric.Rd
 2243cc29ab7885ebfd4e000363df0c2d *man/Faithful.Rd
 6ba850d38df05f2d11a69e5ff2f39c7d *man/Family.Rd
 9e180d9a28bd81ac1bae62bf808f76c2 *man/Ferraro1.Rd
@@ -445,7 +445,7 @@ f9c7daf80532872cc42161a22a60d519 *man/Fabric.Rd
 469510a49058f1818008d707d36513de *man/Fertility.Rd
 919c08d897a3d6ce75af45e138ac754a *man/Firstchi.Rd
 61d42a6b7e6a43d5271b7d114d484278 *man/Fish.Rd
-3fa19aa99605f6bce4b55464fb2fe816 *man/Fitness.Rd
+25b2822eab9a93b73dabbb0dff2471fe *man/Fitness.Rd
 f3943741135540d8c6b9e153ed13f761 *man/Florida2000.Rd
 3a8b5a92e1f66bc418768fe44a518a2d *man/Fluid.Rd
 603ececd014bb3b8eb561a4848c95b50 *man/Food.Rd
@@ -455,7 +455,7 @@ d4a421544e16102534ad48cb0e36e623 *man/Funeral.Rd
 ded332454e5fa2cbafbadd1c54a0f8aa *man/Galaxie.Rd
 595d554cf04ef51409409dcac35055a5 *man/Gallup.Rd
 62058b3139f9f6cf7e652e585e0db47a *man/Gasoline.Rd
-fa2b79259f512294f6cd369263257b80 *man/German.Rd
+0338b0391e9f4a9dc100cee883166a2f *man/German.Rd
 82d67e9a3b0d6d359be17d2005ab49fd *man/Golf.Rd
 d0aae82bb0f8636375169e9206915f57 *man/Governor.Rd
 d2e1ce7bd0763d55aced225332c28efd *man/Gpa.Rd
@@ -466,7 +466,7 @@ d96a039afeaa910c1f8fb3ea5dd7fa6d *man/Grnriv2.Rd
 72e407b65ed563a4c68ae1e2202a243d *man/Groupabc.Rd
 87744d062e8ae5dab453a0ea0ff21eba *man/Groups.Rd
 ee7f527fb3b4ee479536b5008a8dba3a *man/Gym.Rd
-e637d5c002c8bf26800eb3a3ae772283 *man/Habits.Rd
+af42eaa59a543cd0dc569fe2cf5404f3 *man/Habits.Rd
 43970fdb1b6af7e9f9d6462088508942 *man/Haptoglo.Rd
 a31c3ed7f88a6ecaa95ee5af96aaf701 *man/Hardware.Rd
 1c2d8981afc3c77ed2e4e3bcc62de0e9 *man/Hardwood.Rd
@@ -496,7 +496,7 @@ cad9326fa6504a6b1e480fd1449df7a0 *man/Irises.Rd
 06cf5fe21b6f19ceeffbeba75d9257ea *man/Jobsat.Rd
 9cb6b6243392305c67f6144bd21b8412 *man/Kidsmoke.Rd
 fe589289d2a56992ca1ce8b5b00ae9fb *man/Kilowatt.Rd
-ec29849438f6c65c48e89239e2a98413 *man/Kinder.Rd
+c36a0ff478f42d273144f892d66ee06d *man/Kinder.Rd
 e3b1ef402e8f5ef8db020e39a9b39d25 *man/Laminect.Rd
 a27e4f77225b515329311f75e6296a46 *man/Lead.Rd
 f6caefa7d70db0131c1b155bb0c92515 *man/Leader.Rd
@@ -506,7 +506,7 @@ dcc3af2a0b4a6d7390eaf5da5b145631 *man/Lethal.Rd
 32ea316f548f108649b0bbf8cb7bf51b *man/Ligntmonth.Rd
 de087731269215bd69e396d5fd2b6194 *man/Lodge.Rd
 24d261ff3a38b88d0adfd1a94749df88 *man/Longtail.Rd
-23e384390c26b6e19627b939811ff10f *man/Lowabil.Rd
+e1e57bbea2fb323831f94c038321ddc2 *man/Lowabil.Rd
 204be0395ceb4bd2bfd628b363541a86 *man/Magnesiu.Rd
 45a6b91431d89b34b0a1cefbfe40474d *man/Malpract.Rd
 ce19d76e0429178783670f5af5e2e05c *man/Manager.Rd
@@ -523,8 +523,8 @@ f877fe67822dc2a117a8e05da06fd10a *man/Metrent.Rd
 6cd9c18f9f2eb89282aa3c55c893d9ce *man/Miller1.Rd
 8a3c738f48b525320620f5c73b7e9df0 *man/Moisture.Rd
 0ba3b0f03632de843daecb77be7c4e1a *man/Monoxide.Rd
-119b743c2d46139a0ff12fe081f9c93d *man/Movie.Rd
-c8529f44bf370b02dcf56150cd9784d7 *man/Music.Rd
+728d5feace6280e4c6d35b98c131f878 *man/Movie.Rd
+c56791b780a841ad614c01d4d43bccf3 *man/Music.Rd
 36b1a817fadd69032d08e78d6aec365d *man/Name.Rd
 06e5823386d8862a1a393f98e31dddaf *man/Nascar.Rd
 5930e70ebb4f148cf47a2a387341b59e *man/Nervous.Rd
@@ -534,7 +534,7 @@ ffd1edd058706463c7e14fc5cfd20054 *man/Nfldraf2.Rd
 c4d58ee2a812f4389f3d8d879f621b1e *man/Nicotine.Rd
 ea6aec8e6dc955b6f0ae1d83a90b85bb *man/Orange.Rd
 7d9a92fa0cafa10cf4c01c74a318bfc2 *man/Orioles.Rd
-f165e720625d8df0dcbe8b3d8574f20f *man/Oxytocin.Rd
+636ba3ea4d6c0be15388d4a2ab48a16e *man/Oxytocin.Rd
 ad6c73934b6b0928d4f30a7733d0302d *man/Parented.Rd
 d9e4d61b4da8ffeefd89bf1bb62a0acd *man/Patrol.Rd
 106ad350f5b85930500d3877791f2bbb *man/Pearson.Rd
@@ -565,7 +565,7 @@ efc8640aad26b249279798ffcab5d7a2 *man/Reading.Rd
 0b53f29f23a41ff3a766745f1e4677fb *man/Referend.Rd
 89c328839c204edb43ef00261679e793 *man/Region.Rd
 3d84f369f6085df0c5d9a743297cbaad *man/Register.Rd
-cdcdf7631dd6e490580da2bc1fb212c5 *man/Rehab.Rd
+1ab6b8413e6f3d70060dafffc2a13d04 *man/Rehab.Rd
 7497b81866df775a2c002ee0bf3df577 *man/Remedial.Rd
 374dc33052be278103c9754f74a87a52 *man/Rentals.Rd
 1c4c9b0dfb2953d2c52c6ba558c2153b *man/Repair.Rd
@@ -583,7 +583,7 @@ ad7be73e949b283df25348cb0863c5e5 *man/Scales.Rd
 8a8ffdbe1982897d4ede769f7fd19991 *man/Schizop2.Rd
 ee65f857458417442fea7d2ad4562cd4 *man/Schizoph.Rd
 56c149f2d4b1c8875cf255baa505bfc7 *man/Seatbelt.Rd
-0cbc9b21f3b57d4631f47ba5c08d37fd *man/Selfdefe.Rd
+750a7e52a9900364b620473a490a95e7 *man/Selfdefe.Rd
 f5bc6757c1ed282b5c08afba452b36a2 *man/Senior.Rd
 3d4083db9b67c3f2607033fe97ead834 *man/Sentence.Rd
 5c920986968ce0a3a70fe0d5ee5c6e47 *man/Shkdrug.Rd
@@ -603,9 +603,9 @@ c5a15685cd053075754fedf892061e5a *man/Soccer.Rd
 23ef9daa7ef683441712fc85bc53329b *man/Social.Rd
 a4dac8a2e36dc24771cb8697fecc1bff *man/Sophomor.Rd
 bb0cabf67c973dec045a819a7da57e8b *man/South.Rd
-372aa0414cfea29f657d5462003daa95 *man/Speed.Rd
+1555e2701905af42f35429a788d11e05 *man/Speed.Rd
 b2afdadf16cb08cbc56ba44215a5e577 *man/Spellers.Rd
-c86e840cd2cfd9136d9bc87c50c3e982 *man/Spelling.Rd
+290c5ef6fafae1ae4bb27f5bfdc1ba10 *man/Spelling.Rd
 7b5cd9f85d687ccb44724a36d0818124 *man/Sports.Rd
 084c88d378c57b94c7fa825e8bda56b0 *man/Spouse.Rd
 2b4c23439d405bb724064a6fd0e4540f *man/Stable.Rd
@@ -614,7 +614,7 @@ e2fd241205fb7933d773e54b774a1afa *man/Statclas.Rd
 39b78e4446aa0cef971e2fe9e324ccdf *man/Statelaw.Rd
 d14dc80b4b8905b0fba24084ceb8efb4 *man/Statisti.Rd
 970881cddb811150bb7ecb37db7dfe37 *man/Step.Rd
-59f057db8097404ca8c6fce52f34902c *man/Stress.Rd
+a1025863a8303f2f858eda162c9f0c7e *man/Stress.Rd
 5e3de9eec478e25ad401c22ed5a4e435 *man/Study.Rd
 b27a43cf7635b57434e59c8dd266230f *man/Submarin.Rd
 2045a7b804cd97b928e2c462c6052f29 *man/Subway.Rd
@@ -639,7 +639,7 @@ a151b36e3c3fff2943212861a0bce962 *man/Treatments.Rd
 fd54f497813acbf49343ccc667b15daa *man/Trees.Rd
 38ecdff6a28e08a6c3a7b80fc9c1f80e *man/Trucks.Rd
 0bd89d5b329a4fd4280f6db626667acf *man/Tv.Rd
-6bc4700e23627ffb21c9ae6a8b191672 *man/Twin.Rd
+92a71ceebfd29352ce3c1571de3fb00c *man/Twin.Rd
 ea659109721482d2e6ec45980469c2f9 *man/Undergrad.Rd
 d2e85efb9840d35620ae4308b00b18a6 *man/Vacation.Rd
 1cceee7788b768b514234fa40905d42c *man/Vaccine.Rd
@@ -648,7 +648,7 @@ acb2ce1765bac1029715803298adf254 *man/Verbal.Rd
 ae267a8d501679a738f7c2e902ff1618 *man/Victoria.Rd
 ac069d3a6d6e9e9662d23a3868413650 *man/Viscosit.Rd
 98987a2b6461da9262e1a4e064f8a9cb *man/Visual.Rd
-03aa91cf2ed3096cd2b302de3ed8425f *man/Vocab.Rd
+128a289d476fe2b40ff0e00eff5d3929 *man/Vocab.Rd
 1734db013aa86425c1c18240d41ae29e *man/Wastewat.Rd
 13ad6bdf45ac26d4a94932a8a14cbcfd *man/Weather94.Rd
 a60aa665a792f6bbe70678bf39d11328 *man/Wheat.Rd
